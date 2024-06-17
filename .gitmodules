@@ -1,0 +1,3 @@
+[submodule "Self_Driving_Car"]
+    path = Self_Driving_Car
+    url = https://github.com/parthDOOM/Self_Driving_Car.git
