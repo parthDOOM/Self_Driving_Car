@@ -5,6 +5,42 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    position: relative;
+}
+
+#description {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 300px;
+    max-height: 73vh;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    padding-right: 15px; /* Add some space to the right for the scrollbar */
+}
+
+/* Custom scrollbar styles */
+#description::-webkit-scrollbar {
+    width: 10px;
+}
+
+#description::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0; /* Adds space at the top and bottom of the scrollbar track */
+}
+
+#description::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+#description::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #verticalButtons{

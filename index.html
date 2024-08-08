@@ -1,9 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-driving car - No libraries</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="description">
+        <h1>Self-driving Car Simulator</h1>
+        <p>
+            This simulator showcases a self-driving car navigating through traffic using a custom-built, three-layer neural network.
+            The car is equipped with sensors that detect nearby vehicles and obstacles. The neural network processes this sensory data
+            to make real-time decisions, allowing the car to steer, accelerate, or brake as needed.
+        </p>
+        <p>
+            On the right, you can see a visual representation of the neural network. The network is divided into three layers, 
+            each processing different aspects of the input data to determine the car's next move. This visualizer helps in understanding 
+            how the inputs from the car's sensors influence its decisions at each level of the network.
+        </p>
+        <p>
+            The simulator also incorporates a genetic algorithm with a variable mutation rate, allowing you to evolve the car's behavior over time.
+            The best-performing car in each generation is saved, and you can use the <strong>💾 Save</strong> button to store its performance manually.
+            The saved data is crucial for comparing the effectiveness of different generations and tweaking the neural network or mutation rates.
+        </p>
+        <p>
+            If you wish to delete the last saved performance, simply use the <strong>🗑️ Delete</strong> button. This feature is particularly useful 
+            when you want to reset progress or start fresh with new parameters.
+        </p>
+        <p>
+            Both the mutation rate and other genetic algorithm parameters can be adjusted in the source code, giving you full control over the evolution 
+            of the car's driving capabilities.
+        </p>
+    </div>
     <canvas id="carCanvas"></canvas>
     <div id="verticalButtons">
         <button onclick="save()">💾</button>
